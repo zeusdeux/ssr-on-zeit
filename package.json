@@ -1,0 +1,25 @@
+{
+  "name": "ssr-on-zeit",
+  "version": "1.0.0",
+  "description": "Simple example of SSR React app running on the @zeit platform",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "deploy": "npm run build && now"
+  },
+  "keywords": ["zeit", "now", "ssr", "react", "lambda", "webpack"],
+  "author": "Mudit Ameta <zeusdeux@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1"
+  }
+}

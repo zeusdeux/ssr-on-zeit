@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "name": "ssr-on-zeit",
+  "builds": [
+    { "src": "lambda/server-bundle.js", "use": "@now/node" },
+    { "src": "public/*", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/app.(?<ext>.*)", "dest": "/public/app.$ext" },
+    {
+      "src": "/.*",
+      "dest": "/lambda/server-bundle.js",
+      "headers": {
+        "link": "</app.css>; as=style; rel=preload, </app.js>; as=script; rel=preload"
+      }
+    }
+  ]
+}

@@ -29,6 +29,7 @@ function Index({ title, app }) {
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Zeit + React + Webpack + SSR</title>
         <link rel="preload" href="/app.css" as="style" />
         <link rel="preload" href="/app.js" as="script" />

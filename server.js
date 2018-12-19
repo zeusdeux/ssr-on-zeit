@@ -13,7 +13,7 @@ export default function requestHandler({ url }, res) {
 
   if (ctx.url) {
     res.writeHead(301, {
-      Location: url
+      Location: ctx.url
     })
     res.end()
   } else {

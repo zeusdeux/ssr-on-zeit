@@ -7,7 +7,14 @@
     "build": "webpack",
     "deploy": "npm run build && now"
   },
-  "keywords": ["zeit", "now", "ssr", "react", "lambda", "webpack"],
+  "keywords": [
+    "zeit",
+    "now",
+    "ssr",
+    "react",
+    "lambda",
+    "webpack"
+  ],
   "author": "Mudit Ameta <zeusdeux@gmail.com>",
   "license": "MIT",
   "devDependencies": {

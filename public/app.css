@@ -17,8 +17,16 @@ main {
   text-align: center;
 }
 
-a:first-child {
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
   margin-right: 20px;
+}
+
+nav a:last-child {
+  margin-right: 0px;
 }
 
 .box {
@@ -28,6 +36,7 @@ a:first-child {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .red {

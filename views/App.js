@@ -6,6 +6,11 @@ import Nope from './Nope'
 export default function App() {
   return (
     <React.Fragment>
+      <section>
+        <p>This is a server side rendered react app written using ES6 modules and bundled using webpack.</p>
+        <p>It exposes a single function that is hosted on <a href="https://zeit.co/now" target="_blank" rel="noopener noreferrer">zeit</a>.</p>
+        <p>This function is incharge of the initial server side render.</p>
+      </section>
       <Switch>
         <Route exact path="/" component={_ => <h1>Go ahead and click on a link below</h1>} />
         <Route exact path="/red" render={ _ => <Box color="red" />} />

@@ -32,8 +32,10 @@ function Index({ title, app }) {
         <title>Zeit + React + Webpack + SSR</title>
         <link rel="preload" href="/app.css" as="style" />
         <link rel="preload" href="/app.js" as="script" />
+        <link rel="preload" href="https://buttons.github.io/buttons.js" as="script" />
         <link rel="stylesheet" href="/app.css" />
         <script src="/app.js" defer></script>
+        <script src="https://buttons.github.io/buttons.js" defer></script>
       </head>
       <body>
         <main>

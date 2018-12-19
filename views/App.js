@@ -18,9 +18,17 @@ export default function App() {
         }} />
       </Switch>
       <nav>
+        <Link to="/">Home</Link>
         <Link to="/red">Red Box</Link>
         <Link to="/yellow">Yellow Box</Link>
       </nav>
+      <a className="github-button"
+         href="https://github.com/zeusdeux/ssr-on-zeit"
+         data-size="large"
+         aria-label="View zeusdeux/ssr-on-zeit on GitHub"
+      >
+        View on GitHub
+      </a>
     </React.Fragment>
   )
 }

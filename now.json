@@ -4,9 +4,11 @@
   "alias": ["ssr.zdx.cat"],
   "builds": [
     { "src": "lambda/server-bundle.js", "use": "@now/node" },
-    { "src": "public/*", "use": "@now/static" }
+    { "src": "public/*", "use": "@now/static" },
+    { "src": "sw.js", "use": "@now/static" }
   ],
   "routes": [
+    { "src": "/sw.js", "dest": "/sw.js" },
     { "src": "/app.(?<ext>.*)", "dest": "/public/app.$ext" },
     {
       "src": "/.*",

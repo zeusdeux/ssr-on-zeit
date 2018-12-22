@@ -11,6 +11,7 @@
       "src": "/.*",
       "dest": "/lambda/server-bundle.js",
       "headers": {
+        "cache-control": "s-maxage=86400",
         "link": "</app.css>; as=style; rel=preload, </app.js>; as=script; rel=preload"
       }
     }

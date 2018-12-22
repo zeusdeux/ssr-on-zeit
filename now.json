@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "ssr-on-zeit",
+  "alias": ["ssr.zdx.cat"],
   "builds": [
     { "src": "lambda/server-bundle.js", "use": "@now/node" },
     { "src": "public/*", "use": "@now/static" }

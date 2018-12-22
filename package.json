@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "build": "webpack",
-    "deploy": "npm run build && now"
+    "deploy": "npm run build && now",
+    "alias": "npm run deploy && now alias"
   },
   "keywords": [
     "zeit",
